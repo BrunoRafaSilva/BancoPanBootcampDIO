@@ -1,0 +1,9 @@
+<input
+  type="text"
+  [placeholder]="placeholder"
+  (input)="placeholder = $any($event.target).value"
+/>
+<p>{{ placeholder }}</p>
+
+<!-- associei uma propriedade a outra 
+colchetes fazem property databind e os parenteses se relacionam a um evento-->

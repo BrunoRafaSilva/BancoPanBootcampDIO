@@ -14,6 +14,13 @@ export class Button {
     // e inclusive como objeto
     label: 'adicionar ao carrinho',
   };
+
+  getAlert(num:number){
+    //isso fará retornar a label do botão, via event biding
+    //alert(this.label)
+    alert(num)
+  }
+
 }
 
 /**

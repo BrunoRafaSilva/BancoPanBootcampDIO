@@ -1,6 +1,16 @@
 <router-outlet>loading</router-outlet>
 <menu-component></menu-component>
 
-<my-button [label]="buttonLabel"></my-button>
+<!-- data binding = associação de dados -->
+
+<!-- interpolação -->
+<my-button label="noticia"></my-button>
+<my-button label="{{buttonLabel}}"></my-button>
+
+<!-- propery binding / associando propriedades a valores-->
 <my-button [label]="buttonSecond"></my-button>
+<my-button [label]="buttonLabel"></my-button>
 <my-button label="Olá Mundo"></my-button>
+
+<!-- two way data binding - associação de dois lados -->
+<app-entry-data></app-entry-data>

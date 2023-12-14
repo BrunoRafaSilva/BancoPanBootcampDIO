@@ -6,5 +6,10 @@
   <button>{{ buttonTexts[1] }}</button>
   <button>{{ buttonTexts }}</button>
   <button>{{ buttonObject.label }}</button> -->
-  <button>{{ label }}</button>
+  
+  <!-- <button>{{ label }}</button> -->
+
+  <!-- Isso é um event biding padrão do HTML -->
+  <!-- <button (click)="getAlert()">{{label}}</button> -->
+  <button (click)="getAlert(5)">{{label}}</button>
 </div>

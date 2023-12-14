@@ -5,16 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu.component';
 import { Button } from './components/button.component';
+import { EntryDataComponent } from './components/entry-data.component';
 
 @NgModule({
-  declarations: [
-    AppComponent, MenuComponent, Button
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, MenuComponent, Button, EntryDataComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
