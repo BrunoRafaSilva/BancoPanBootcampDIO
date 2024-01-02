@@ -7,3 +7,12 @@
 
 <!-- associei uma propriedade a outra 
 colchetes fazem property databind e os parenteses se relacionam a um evento-->
+<input
+  type="text"
+  [placeholder]="placepass"
+  (input)="placepass = $any($event.target).value"
+/>
+<p [style.color]="color">{{ placepass }}</p>
+
+<!-- associei uma propriedade a outra 
+colchetes fazem property databind e os parenteses se relacionam a um evento-->
