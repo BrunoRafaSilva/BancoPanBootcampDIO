@@ -9,13 +9,17 @@ export class CardComponent implements OnInit {
   produtos: string[] = [];
 
   constructor() {
-    this.produtos = [
-      "mouse",
-      "teclado",
-      "cabo",
-      "fonte"
-    ]
+    this.produtos = ['mouse', 'teclado', 'cabo', 'fonte'];
   }
 
   ngOnInit(): void {}
+
+  adicionar() {
+    this.produtos.push('Bruno');
+  }
+
+  remover(index: number) {
+    alert(index);
+    this.produtos.splice(index, 1); //vou deletar um elemento do index por isso o numero 1
+  }
 }
