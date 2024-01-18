@@ -1,0 +1,29 @@
+<ng-content select="h2"></ng-content>
+<p class="enable">comp-atributos works!</p>
+<p [ngClass]="estilo">classe dinamica</p>
+<button (click)="trocar()">wind of change</button>
+<!-- o estilo está criando no component -->
+
+<h1 [ngStyle]="{ background: corFundo, color: corDaFonte }">CURSO ANGULAR</h1>
+
+<h1>Lista de compras</h1>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item" id="" />
+<button (click)="adicionarLista()">ADICIONAR PARA A LISTA</button>
+<p>{{ item }}</p>
+
+<ul>
+  <li *ngFor="let elemento of lista">{{ elemento }}</li>
+</ul>
+
+<hr />
+
+<ng-template [ngIf]="true">
+  <a href="#">FINALIZAR COMPRA</a>
+</ng-template>
+
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">ADICIONAR AO CARRITO </a>
+</ng-template>
+
+<hr />
